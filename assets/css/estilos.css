@@ -1,0 +1,86 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #1b691a;
+}
+
+header .logo img {
+    width: 230px;
+}
+
+header .lista ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header .lista ul li {
+    display: inline-block;
+    margin: 0px 0px 0px 25px;
+}
+
+header .btn-busqueda {
+    float: right;
+    margin: 20px 80px 0px 0px;
+}
+
+header .btn-busqueda p {
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+header .btn-busqueda p:hover {
+    background: black;
+    cursor: pointer;
+}
+
+
+header .logo, header .lista, header .btn-busqueda {
+    display: inline-block;
+}
+
+header .logo {
+    margin: 30px 0px 0px 90px;
+}
+
+nav {
+    margin-left: 60px;
+}
+
+nav  ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1b681d;
+}
+
+section {
+    margin: 40px 0px 0px 100px;
+}
+
+section .titulo h3 {
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+section .titulo {
+    
+    margin-bottom: 60px;
+}
+
+section .titulo h3, section .titulo span {
+    display: inline-block;
+}
