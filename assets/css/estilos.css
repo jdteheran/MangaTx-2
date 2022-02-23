@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'iconitos';
+    src:  url('../font/iconos/icomoon.eot?5n8kgk');
+    src:  url('../font/iconos/icomoon.eot?5n8kgk#iefix') format('embedded-opentype'),
+      url('../font/iconos/icomoon.ttf?5n8kgk') format('truetype'),
+      url('../font/iconos/icomoon.woff?5n8kgk') format('woff'),
+      url('../font/iconos/icomoon.svg?5n8kgk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,6 +58,25 @@ header .logo {
     margin: 30px 0px 0px 90px;
 }
 
+header .lista {
+    vertical-align: top;
+}
+
+header .lista .casa::after {
+    font-family: 'iconitos';
+    content: '\f015';
+}
+
+header .lista .carpeta::after {
+    font-family: 'iconitos';
+    content: '\f115';
+}
+
+header .btn-busqueda .lupa::before {
+    font-family: 'iconitos';
+    content: '\f002';
+}
+
 nav {
     margin-left: 60px;
 }
@@ -66,6 +97,21 @@ nav ul li a:hover {
     color: #1b681d;
 }
 
+nav .discord::before {
+    font-family: 'iconitos';
+    content: '\e900';
+}
+
+nav .engranaje::before {
+    font-family: 'iconitos';
+    content: '\f085';
+}
+
+nav .play::after {
+    font-family: 'iconitos';
+    content: '\ea1c';
+}
+
 section {
     margin: 40px 0px 0px 100px;
 }
@@ -79,6 +125,18 @@ section .titulo h3 {
 section .titulo {
     
     margin-bottom: 60px;
+}
+
+section .titulo .rayo {
+    width: 35px;
+    height: 35px;
+    background: #1b681d;
+    color: white;
+}
+
+section .titulo .rayo::before {
+    font-family: 'iconitos';
+    content: '\f0e7';
 }
 
 section .titulo h3, section .titulo span {
