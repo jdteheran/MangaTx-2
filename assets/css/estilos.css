@@ -46,8 +46,19 @@ header .btn-busqueda {
     margin: 20px 80px 0px 0px;
 }
 
-header .logo, header .lista, header .btn-busqueda {
+header .logo, header .lista, header .btn-busqueda, header .btn-sidebar {
     display: inline-block;
+}
+
+header .btn-sidebar {
+    display: none;
+    float: right;
+}
+
+header .btn-sidebar img {
+
+    width: 30px;
+    height: 30px;
 }
 
 header .logo {
@@ -305,11 +316,27 @@ footer .genero .lista-genero ol{
 
 footer .lista-footer{
     text-align: center;
+    margin-top: 60px;
 }
 
 footer .lista-footer ul li{
     display: inline-block;
     border-right: 1px solid gray;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+footer .lista-footer ul li {
+    text-transform: uppercase;
+}
+
+footer .lista-footer ul li:nth-child(2) {
+    text-transform: none;
+}
+
+footer .lista-footer ul li a {
+    text-decoration: none;
+    color: #222;
 }
 
 footer .lista-footer ul li:last-child{
@@ -319,4 +346,88 @@ footer .lista-footer ul li:last-child{
 
 footer .lista-footer ul{
     margin: 0px auto;
+}
+
+footer .copy {
+    text-align: center;
+    margin: 10px 100px 0px 100px;
+    color: #666666;
+}
+
+@media only screen and (max-width: 1260px) {
+
+    section article:first-child {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+
+    header .lista {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    header .logo {
+        margin: 10px;
+    }
+
+    nav {
+        margin-left: 0px;
+    }
+
+    section {
+        margin: 10px 0px 0px 10px;
+    }
+    
+    header .btn-busqueda {
+        margin-right: 20px;
+    }
+
+    header .btn-sidebar {
+        margin: 20px 30px 0px 0px;
+        display: block;
+    }
+
+    section article:first-child {
+        margin-right: 0px;
+    }
+
+    section .par-art {
+        width: 100%;
+    }
+
+    section .articulos .portada img {
+        height: 150px;
+    }
+    
+    section .par-art {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    
+  }
+
+
+@media only screen and (max-width: 420px) {
+    section .articulos .contenido .capitulos .penult-cap p{
+        width: 50%;
+    }
+
+    section .par-art {
+        width: 100%;
+    }
+
+    section .articulos .contenido .capitulos .ult-cap a {
+        margin-right: 0px;
+    }
+
+    section .articulos .contenido {
+        width: 50%;
+    }
 }
